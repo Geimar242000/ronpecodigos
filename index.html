@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>🧠 Rompecódigos</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="game">
+    <h1>🧠 Rompecódigos</h1>
+    <p>Intenta adivinar la combinación secreta de 4 colores 🎨</p>
+
+    <div id="board"></div>
+
+    <div class="controls">
+      <div id="palette">
+        <button class="color red"></button>
+        <button class="color blue"></button>
+        <button class="color green"></button>
+        <button class="color yellow"></button>
+        <button class="color purple"></button>
+        <button class="color orange"></button>
+      </div>
+      <button id="check" disabled>Comprobar ✅</button>
+      <button id="restart">🔁 Reiniciar</button>
+    </div>
+
+    <p id="message">Selecciona 4 colores y comprueba.</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

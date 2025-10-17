@@ -1,0 +1,76 @@
+* { box-sizing: border-box; font-family: "Poppins", sans-serif; }
+body {
+  margin: 0; background: linear-gradient(135deg,#0f172a,#1e3a8a);
+  display: flex; justify-content: center; align-items: center;
+  min-height: 100vh; color: #f8fafc;
+}
+
+.game {
+  background: rgba(255,255,255,0.1);
+  border-radius: 20px;
+  padding: 20px;
+  width: 90%;
+  max-width: 420px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+h1 { margin: 0 0 10px; }
+#board {
+  margin: 15px 0;
+  display: grid;
+  gap: 10px;
+}
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.cell {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  background: transparent;
+  cursor: pointer;
+  transition: transform 0.1s;
+}
+.cell:hover { transform: scale(1.1); }
+
+.feedback {
+  display: flex;
+  gap: 4px;
+  margin-left: 10px;
+}
+.feedback div {
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+}
+
+.color {
+  width: 35px; height: 35px; border: none; border-radius: 50%;
+  margin: 5px; cursor: pointer; transition: transform 0.1s;
+}
+.color:active { transform: scale(0.9); }
+.red { background:#ef4444; }
+.blue { background:#3b82f6; }
+.green { background:#22c55e; }
+.yellow { background:#eab308; }
+.purple { background:#a855f7; }
+.orange { background:#f97316; }
+
+button {
+  background:#3b82f6; border:none; color:white;
+  border-radius:8px; padding:10px 15px; margin-top:10px;
+  font-size:16px; cursor:pointer;
+}
+button:hover { background:#2563eb; }
+
+#message { margin-top:10px; font-weight:500; }
+
+@media (max-width:480px){
+  .game{width:95%;font-size:18px;}
+  .cell{width:35px;height:35px;}
+}
